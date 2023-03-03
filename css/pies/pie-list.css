@@ -1,0 +1,67 @@
+.pie-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.pie-list h2 {
+  margin-bottom: 40px;
+}
+
+.pie-list ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+#pie .pie-list ul {
+  padding: 0px 0px 20px 0px;
+}
+
+.pie-list li {
+  min-width: 280px;
+}
+
+.pie-list a {
+  display: block;
+}
+
+.pie-list img {
+  margin-bottom: 16px;
+}
+
+.pie-list h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.pie-list h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.pie-list a:hover h3::before {
+  width: 24px;
+}
+
+.pie-list li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .pie-list {
+    padding-bottom: 60px;
+  }
+  .pie-list ul {
+    gap: 20px;
+  }
+}
